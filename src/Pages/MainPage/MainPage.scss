@@ -1,9 +1,9 @@
-.wrapper{
+.wrapper {
     position: relative;
-    width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
-.iconSwitch{
+.iconSwitch {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,12 +11,12 @@
     height: 100%;
 }
 
-.header{
+.header {
     display: flex;
     padding: 0 20px;
     justify-content: space-between;
     align-items: center;
-
+    background-color: transparent;
     &__logo {
         img {
             width: 20rem;
@@ -24,7 +24,7 @@
         }
     }
 
-    &__control{
+    &__control {
         display: flex;
         align-items: center;
 
@@ -32,27 +32,27 @@
         //     padding: 1.2rem 1.6rem;
         // }
 
-        &-time{
+        &-time {
             font-size: 1.6rem;
-            padding: .6rem 1rem;
-            border-radius: .6rem;
-            background-color: #4c4b4d ;
+            padding: 0.6rem 1rem;
+            border-radius: 0.6rem;
+            background-color: #4c4b4d;
             color: #fff;
-            border: .6rem;
+            border: 0.6rem;
         }
 
-        &-itemControl{
+        &-itemControl {
             display: flex;
-            border-radius: .6rem;
+            border-radius: 0.6rem;
             background-color: #4c4b4d;
-            border-left: .05rem solid #fff;
+            border-left: 0.05rem solid #fff;
             overflow: hidden;
             cursor: pointer;
-            transition: all .5s linear;
-            
-            & >div{
-                padding: .8rem 1.2rem;
-                &:hover{
+            transition: all 0.5s linear;
+
+            & > div {
+                padding: 0.8rem 1.2rem;
+                &:hover {
                     background-color: #000;
                 }
 
@@ -60,20 +60,19 @@
                     border-left: 1px solid #ccc;
                     border-right: 1px solid #ccc;
                 }
-               img{
+                img {
                     width: 1.5rem;
                     height: 1.5rem;
                     // padding: 1rem;
                     display: block;
-               }
+                }
             }
         }
     }
 }
 
-
 .menu {
-    &__item{
+    &__item {
         position: absolute;
         background-color: #4c4b4d;
         border-radius: 1rem;
@@ -81,47 +80,60 @@
         top: 50%;
         transform: translateY(-50%);
 
-       &-show{
+        &-show {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 1.8rem .4rem;
-            &>div{
+            padding: 1.8rem 0.4rem;
+            & > div {
                 padding: 1.2rem 1rem;
             }
-       }
+        }
 
         &-more {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 1.8rem .4rem;
+            padding: 1.8rem 0.4rem;
             overflow: hidden;
             height: 1px;
             padding: 0;
             transition: all 0.2s linear;
-            &>div{
+            & > div {
                 padding: 1.2rem 1rem;
             }
         }
-        &-change{
+        &-change {
             height: 200px;
         }
     }
 }
 
-.icon__header{
+.icon__header {
     display: flex;
     align-items: center;
-    &>div{
+    & > div {
         transform: translateY(2px);
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
     }
 }
 
-.iconControl{
-    margin: 0 .6rem;
+.iconControl {
+    margin: 0 0.6rem;
 }
 
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    & > video {
+        object-fit: cover;
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s linear;
+        position: absolute;
+        animation: zoom 0.2s ease-in-out;
+    }
+}
