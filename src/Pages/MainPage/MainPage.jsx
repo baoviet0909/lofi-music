@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { useDispatch, useSelector } from 'react-redux';
 import Switch from 'react-switch';
 import {
@@ -61,6 +62,7 @@ function MainPage() {
             <div className="header">
                 <div className="header__logo">
                     <img src={LogoGif} />
+
                 </div>
                 <div className="header__control">
                     <div className="iconControl header__control-time">16:58 PM</div>
@@ -120,10 +122,15 @@ function MainPage() {
                     </div>
                 </div>
             </div>
+            <div className='menu'>
+                <div className='menu__item'>
+                    <duv className='menu__item-show'>
+                        <div onClick={() => setVisibleSetting(true)}>
+                            <img src={settingmenu}/>
             <div className="menu">
                 <div className="menu__item">
                     <duv className="menu__item-show">
-                        <div>
+                        <div onClick={() => setVisibleSetting(true)}>
                             <img src={settingmenu} />
                         </div>
                         <div>
@@ -151,10 +158,13 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
+
             </div>
             <div className="background">
                 <video src={getVideo(theme)} muted autoPlay loop className="background" />
+
             </div>
+            <DraggebleSetting visible={visibleSetting}/>
         </div>
     );
 }
