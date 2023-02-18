@@ -54,7 +54,29 @@ import noteLine from './noteLine.svg'
 import newNote from './newNote.svg'
 import delNote from './delNote.svg'
 import back from './back.svg'
+import prevControl from './noises/prevControl.svg'
+import nextControl from './noises/nextControl.svg'
+import playControl from './noises/playControl.svg'
+import pauseControl from './noises/pauseControl.svg'
+import volumn from './noises/volumn.svg'
+import fullScreenICon from './noises/fullScreenICon.svg'
+import menuIcon from './noises/menuIcon.svg'
+import settingmenu from './noises/settingmenu.svg'
+import template from './noises/template.svg'
+import injected from './noises/injected.svg'
+import tools from './noises/tools.svg'
 export {
+    tools,
+    injected,
+    template,
+    settingmenu,
+    menuIcon,
+    fullScreenICon,
+    volumn,
+    pauseControl,
+    playControl,
+    nextControl,
+    prevControl,
     back ,
 	delNote,
 	newNote,
