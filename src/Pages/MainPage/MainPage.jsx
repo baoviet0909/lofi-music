@@ -4,12 +4,15 @@ import { useState } from 'react';
 import { fullScreenICon, injected, menuIcon, moonIcon, nextControl, playControl, prevControl, settingmenu, sunIcon, template, tools, volumeMaxIcon, volumn } from '../../assets/icons';
 import './MainPage.scss'
 import { Button, Divider, Segmented, Tooltip } from 'antd';
+import DraggebleSetting from './DraggebleSetting/DraggebleSetting';
+
 function MainPage() {
     const [checked, setChecked] = useState(false)
     const [ changeMenu,setChangeMenu] = useState(false)
+    const [ visibleSetting, setVisibleSetting] = useState(false)
 
     return ( 
-        <div className='wrapper'>
+        <div className='wrapper parent '>
             <div className='header' style={{background: '#ccc'}}>
                 <div className='header__logo'>
                     <img src={LogoGif}/>
@@ -63,7 +66,7 @@ function MainPage() {
             <div className='menu'>
                 <div className='menu__item'>
                     <duv className='menu__item-show'>
-                        <div>
+                        <div onClick={() => setVisibleSetting(true)}>
                             <img src={settingmenu}/>
                         </div>
                         <div>
@@ -91,7 +94,7 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-                
+               <DraggebleSetting visible={visibleSetting}/>
             </div>
         </div>
     );
