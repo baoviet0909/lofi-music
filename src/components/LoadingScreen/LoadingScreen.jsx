@@ -1,11 +1,11 @@
-import { foodStall2Img } from "../../assets/images";
-
+import { LogoGif } from "../../assets/images/index";
+import './Loading.scss'
 
 function LoadingScreen() {
     return (
         <>
-            <div>
-                <img src={foodStall2Img} alt="" />
+            <div className="loading__bg">
+                <img src={LogoGif} alt="" />
             </div>
         </>
     );

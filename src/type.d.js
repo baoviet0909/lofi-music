@@ -1,3 +1,4 @@
+// định nghĩa đuổi file để trình duyệt đọc được đuôi
 declare module '*.jpg';
 declare module '*.mp4';
 declare module '*.gif';
