@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        //link tới file để đọc
         "typeRoots": ["src/type.d.js"]
     }
 }

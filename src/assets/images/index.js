@@ -47,6 +47,7 @@ import notFound from "./notfound.svg"
 import tiktokLogo from './tiktok-logo.svg'
 import LogoGif from './logoGif.gif'
 export {
+    LogoGif,
     tiktokLogo,
     notFound,
     cafe1Img,
