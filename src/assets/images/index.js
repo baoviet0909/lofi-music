@@ -45,6 +45,7 @@ import sceneSummer2Img from './thumbnails/scene-summer-2.png';
 import mosaicImg from './social-mosaic.svg';
 import notFound from "./notfound.svg"
 import tiktokLogo from './tiktok-logo.svg'
+import LogoGif from './logoGif.gif'
 export {
     tiktokLogo,
     notFound,
